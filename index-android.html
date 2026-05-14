@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>蜥蜴传媒发布页</title>
+    <meta http-equiv="Pragma" content="no-cache,no-store,must-revalidate">
+    <meta http-equiv="Cache-Control" content="Cache-Control: no-store, no-cache, max-age=0, must-revalidate, proxy-revalidate">  
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="theme/skin1/logo.ico">
+    <link rel="Shortcut Icon" href="theme/skin1/logo.ico">
+    <link rel="Bookmark" href="theme/skin1/logo.ico">
+    <link rel="stylesheet" href="theme/skin1/css/reset.css">
+    <link rel="stylesheet" href="theme/skin1/css/mobile.css">
+    <link rel="stylesheet" href="theme/skin1/iconfont/iconfont.css">
+    <script>
+        (function (c) {
+            var e = document.documentElement || document.body,
+                a = "orientationchange" in window ? "orientationchange" : "resize",
+                b = function () {
+                    var f = e.clientWidth;
+                    e.style.fontSize = (f >= 750) ? "100px" : 100 * (f / 750) + "px";
+                    // e.style.fontSize = (f >= 580) ? "77px" : 77 * (f / 580) + "px"
+                };
+            b();
+            c.addEventListener(a, b, false)
+        })(window);
+        window.browser = function () {
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                // ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                ios: /(iPhone|iPad|iPod|iOS|Mac)/i.test(u),
+                android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: /(?:iPad|PlayBook)/.test(u), //是否iPad
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                qq: u.match(/QQ/i) == "qq", //是否QQ,
+                safari: /Safari/.test(u) && !/Chrome/.test(u) && u.indexOf('MQQBrowser') < 0
+            };
+        }();
+    </script>
+    <!-- Counter tag (ctag.js) -->
+    <link rel="preload" as="script" href="ctag/a.js"><script>!function(w){w._ccQ=w._ccQ||[];w.CCounter=w.CCounter||{};w.CCounter.event=w.CCounter.event||function(){w._ccQ.push(["event",[].slice.call(arguments)])};w.CCounter.init=w.CCounter.init||function(){w._ccQ.push(["init",[].slice.call(arguments)])}}(window);!function(d,w){var s=d.createElement("script");s.src="ctag/a.js";s.defer=1;s.onload=function f(){if(!(w.CCounter&&"function"==typeof w.CCounter.init&&"function"==typeof w.CCounter.event))return setTimeout(f,30);try{w.CCounter.init("9c02783ea61443d1","/ctag","ox881tx")}catch(e){}if(!w._ccFlushed){var q=w._ccQ||[];w._ccFlushed=1;w._ccQ=[];for(var i=0;i<q.length;i++){var t=q[i][0],a=q[i][1];try{"function"==typeof w.CCounter[t]&&w.CCounter[t].apply(w.CCounter,a)}catch(e){}}}};d.head.appendChild(s)}(document,window);</script>    <script src="assets/plugin/landing-sdk-boot.js"></script>
+    <!-- <script>
+    bootLandingSDK({appId:"YC-001",channel:"ox881tx",landing_page_id:"skin1",trace_id:"aba95c30-3809-43b1-a5af-85179e6f8446"});
+    </script> -->
+</head>
+<style>
+    #body{
+        background-color: #000;
+        background-image: url("theme/skin1/images/mobile/bg1.jpg");
+        background-size: cover;
+        font-size: 0.24rem;
+        max-width:580px;
+        margin: 0 auto !important;
+        position: relative;
+        /*overflow:hidden;*/
+    }
+</style>
+<body id="body">
+
+<div class="mobile">
+    <div class="fixed-links">
+        <a href="javascript:alert('前面的区域以后再来探索吧？')">
+            <picture>
+                <source srcset="theme/skin1/images/group.webp" type="image/webp">
+                <img src="theme/skin1/images/group.png" alt="">
+            </picture>
+        </a>
+        <a href="javascript:alert('前面的区域以后再来探索吧？')">
+            <picture>
+                <source srcset="theme/skin1/images/email.webp" type="image/webp">
+                <img src="theme/skin1/images/email.png" alt="">
+            </picture>
+        </a>
+    </div>
+
+    <div class="main">
+        <picture>
+            <source style="height: 1.42rem" srcset="theme/skin1/images/mobile/title.webp" type="image/webp">
+            <img style="height: 1.42rem" src="theme/skin1/images/mobile/title.png" alt="">
+        </picture>
+        <div class="time" id="time">00:00</div>
+        <picture>
+            <source style="height: 0.36rem" srcset="theme/skin1/images/pc/title-2.webp" type="image/webp">
+            <img style="height: 0.36rem" src="theme/skin1/images/pc/title-2.png" alt="">
+        </picture>
+    </div>
+    <div class="fixed-footer">
+        <picture>
+            <source class="logo" srcset="theme/skin1/images/mobile/logo.webp" type="image/webp">
+            <img class="logo" src="theme/skin1/images/mobile/logo.png" alt="">
+        </picture>
+        <div class="download-box">
+                        <div class="download-btn" id="downloadBtn-android">
+                <a id="auto_download" class="copy ws-event" data-ws-event="download-android" href="javascript:download()" data-type="android" >
+                    <i class="iconfont icon-android"></i>
+                    <span>安卓版下载</span>
+                </a>
+            </div>
+                    </div>
+        <a class="doc-btn" href="javascript:openDoc()">安装失败?点我查看安装教程</a>
+        <!--            <div class="android-version">-->
+        <!--                <a href="/doc">安装失败?点我查看安装教程</a>-->
+        <!--            </div>-->
+        <!-- <picture>
+            <source class="slogan" srcset="theme/skin1/images/pc/slogan.webp" type="image/webp">
+            <img class="slogan" src="theme/skin1/images/pc/slogan.png" alt="">
+        </picture> -->
+    </div>
+</div>
+
+<div  id="install-doc" style="display: none">
+    <img src="theme/skin1/images/doc/close.png" alt="" class="fix-close" onclick="closeDoc()">
+        <div class="download-list">
+        <div class="fix_title">手机报毒禁止安装解决方法</div>
+        <!--green-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/green-setting.png" alt="">
+                <div class="download-item-title">允许未知来源APP安装设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        下载前请先至
+                        <span>【设置】</span>
+                        <span>【系统安全】</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/green-setting-image1.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">允许未知来源</div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/green-setting-image2.png" alt="">
+            </div>
+        </div>
+        <!--紫设置-->
+        <div class="download-item">
+            <div class="download-item-detail">
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        打开系统设置，找到
+                        <span>【安全与隐私】</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/purple-setting-image1.png" alt="">     
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>【更多安全设置】</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/purple-setting-image2.png" alt="">     
+                <div class="download-item-des">
+                    <span class="download-item-number">3</span>
+                    <div class="download-item-des-title">
+                        找到
+                        <span>【禁止安装恶意应用】</span>
+                        并关闭
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/purple-setting-image3.png" alt="">     
+            </div>
+        </div>
+        <!--华为-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/huawei.png" alt="">
+                <div class="download-item-title">华为手机安装APP和杀毒设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <img class="download-item-header" src="theme/skin1/images/doc/huawei-header.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        下载后会弹出风险框，请不用担心，   没有任何病毒，请点击
+                        <span>「暂不处理」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/huawei-image1.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        安装后打开
+                        <span>「信任此应用」</span>
+                        即可
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/huawei-image2.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">3</span>
+                    <div class="download-item-des-title">找到【禁止安装恶意应用】并关闭</div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/huawei-image3.png" alt="">
+            </div>
+        </div>
+        <!--鸿蒙-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/harmonyOS.png" alt="">
+                <div class="download-item-title">鸿蒙纯净版安装APP和杀毒设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <img class="download-item-header" src="theme/skin1/images/doc/harmonyOS-header.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        无法安装APP点击
+                        <span>「取消」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image1.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        打开手机设置页面点击
+                        <span>「系统和更新」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image2.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">3</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>「纯净模式」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image3.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">4</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>「退出」</span>
+                        按钮
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image4.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">5</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>「仍然退出」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image5.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">6</span>
+                    <div class="download-item-des-title">
+                        回到安装页面 点击
+                        <span>「继续安装」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image6.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">7</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>「继续安装」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image7.png" alt="">       
+                <div class="download-item-des">
+                    <span class="download-item-number">8</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>「解除」</span>
+                        解除网络限制
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/harmonyOS-image8.png" alt="">       
+            </div>
+        </div>
+        <!--小米-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/mi.png" alt="">
+                <div class="download-item-title">小米手机安装APP和杀毒设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <img class="download-item-header" src="theme/skin1/images/doc/mi-header.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">!</span>
+                    <div class="download-item-des-title">
+                        小米手机在正常安装情况下不会提示病毒，但 下载后我们还是需在腾讯手机管家里把
+                        <span>  </span>
+                        添加到
+                        <span>信任区</span>
+                    </div>
+                </div>
+                <div class="download-item-big-title">腾讯手机管家设置</div>
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        打开
+                        <span>「腾讯手机管家」</span>
+                        后点击
+                        <span>「安全检测」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/mi-image1.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        继续下一步，点击
+                        <span>「处理」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/mi-image2.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">3</span>
+                    <div class="download-item-des-title">
+                        然后点击
+                        <span>「移入信任区」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/mi-image3.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">4</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>「确认」</span>
+                        后，白名单添加成功，再次杀毒 就不会提示了
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/mi-image4.png" alt="">
+            </div>
+        </div>
+        <!--OPPO-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/oppo.png" alt="">
+                <div class="download-item-title">OPPO手机安装APP和杀毒设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <img class="download-item-header" src="theme/skin1/images/doc/oppo-header.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        下载后会弹出
+                        <span>「发现病毒」</span>
+                        请不用担心，   没有任何病毒，请点击
+                        <span>「无视风险安装」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/oppo-image1.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        oppo自带的
+                        <span>「安全卫士」</span>
+                        中会检测出敏感内容 由于  中包含成人内容所致请放心使用
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/oppo-image2.png" alt="">
+            </div>
+        </div>
+        <!--VIVO-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/vivo.png" alt="">
+                <div class="download-item-title">VIVO手机安装APP和杀毒设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <img class="download-item-header" src="theme/skin1/images/doc/vivo-header.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        下载后会弹出风险框，请点击
+                        <span>「继续安装」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/vivo-image1.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        在
+                        <span>「高风险提示」</span>
+                        弹框出现后点击安装，如没有安装，请重复第一步并点击
+                        <span>「忽略风险并安装」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/vivo-image2.png" alt="">
+            </div>
+        </div>
+        <!--魅族-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/meizu.png" alt="">
+                <div class="download-item-title">MEIZU手机安装APP和杀毒设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <img class="download-item-header" src="theme/skin1/images/doc/meizu-header.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">!</span>
+                    <div class="download-item-des-title">
+                        魅族自带的
+                        <span>「手机管家」</span>
+                        点击
+                        <span>「病毒查杀」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/meizu-image1.png" alt="">
+                <div class="download-item-big-title">魅族手机管家设置</div>
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        在
+                        <span>「高风险提示」</span>
+                        弹框出现后点击安装，如没有安装，请重复第一步并点击
+                        <span>「忽略风险并安装」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/meizu-image2.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        检查完成后请点击
+                        <span>「隐患应用」</span>
+                        ，不用点击
+                        <span>「立即修复」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/meizu-image3.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">3</span>
+                    <div class="download-item-des-title">
+                        进入后再点击
+                        <span>「受信任的应用」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/meizu-image4.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">4</span>
+                    <div class="download-item-des-title">
+                        找到  然后勾选点击
+                        <span>「确认」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/meizu-image5.png" alt="">
+            </div>
+        </div>
+        <!--腾讯手机管家-->
+        <div class="download-item">
+            <div class="download-item-info" onclick="downloadItemShow(this)">
+                <img class="download-item-logo" src="theme/skin1/images/doc/tencent.png" alt="">
+                <div class="download-item-title">腾讯手机管家安全设置</div>
+                <div class="download-item-detail-button">查看</div>
+            </div>
+            <div class="download-item-detail">
+                <div class="download-item-des">
+                    <span class="download-item-number">1</span>
+                    <div class="download-item-des-title">
+                        打开
+                        <span>「腾讯手机管家」</span>
+                        后点击
+                        <span>「安全检测」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/tencent-image1.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">2</span>
+                    <div class="download-item-des-title">
+                        继续下一步，点击
+                        <span>「处理」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/tencent-image2.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">3</span>
+                    <div class="download-item-des-title">
+                        然后点击
+                        <span>「移入信任区」</span>
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/tencent-image3.png" alt="">
+                <div class="download-item-des">
+                    <span class="download-item-number">4</span>
+                    <div class="download-item-des-title">
+                        点击
+                        <span>「确认」</span>
+                        后，白名单添加成功，再次杀毒 就不会提示了
+                    </div>
+                </div>
+                <img class="download-item-image" data-src="theme/skin1/images/doc/tencent-image4.png" alt="">
+            </div>
+        </div>
+    </div>
+<script>
+    function downloadItemShow(e) {
+        var parentElement = e.parentElement,
+            expandElement = document.querySelector('.expand'),
+            detailElement = parentElement.querySelector('.download-item-detail'),
+            hasNode = detailElement.classList.contains('expand');
+
+        if(expandElement){
+            expandElement.style.display='none';
+            expandElement.classList.remove('expand');
+            expandElement.parentElement.querySelector('.download-item-detail-button').style.display = 'block';
+        }
+        if(!hasNode){
+            detailElement.style.display = 'flex';
+            detailElement.classList.add('expand');
+            parentElement.querySelector('.download-item-detail-button').style.display = 'none';
+        }
+
+        loadImg(parentElement.querySelectorAll('.download-item-image'));
+        setTimeout(function () {
+            parentElement.scrollIntoView(true);
+        },50)
+    }
+    function loadImg(imgs) {
+        for(i=0;i<imgs.length;i++){
+            imgs[i].src=imgs[i].dataset.src;
+        }
+    }
+</script>
+</div>
+
+<script>
+    const userAgent = navigator.userAgent.toLowerCase()
+    let isPc = Boolean(userAgent.match(/mobile|android|iphone/i)) === false
+    let isMobile = Boolean(userAgent.match(/mobile|android|iphone/i))
+    let isWindow = Boolean(userAgent.match(/win32|win64|windows|wince/i))
+    let isMac = Boolean(userAgent.match(/mac/i))
+    let isIos = Boolean(userAgent.match(/iphone|ipad/i))
+    let isAndroid = Boolean(userAgent.match(/android|mobile|pad/i) && Boolean(userAgent.match(/ipad/i)) === false && Boolean(userAgent.match(/mac/i)) === false)
+    // if (screen.availWidth >= 1024 && !isAndroid) {
+    //     window.location.href='/';
+    // }
+    if(!isIos){
+            }
+
+    setTime();
+    setInterval(setTime,30*1000);
+    function setTime(){
+        var date = new Date(),
+            hour = date.getHours(),
+            min = date.getMinutes();
+        if(min<10){
+            min = '0'+min
+        }
+        if(hour<10){
+            hour = '0'+hour
+        }
+        document.getElementById('time').innerText = hour+':'+min+'';
+    }
+
+    function download(){
+        alert("前面的区域以后再来探索吧？")
+        // copyToClip();
+        // var link = '/tnsp/android/20260514-110843.apk';
+        // if(isIos){
+        //     link='/ios';
+        // }else{
+        //     setTimeout(function () {
+        //         openDoc();
+        //     }, 1200);
+        //     // CCounter.event("click_Android","");
+        //     try {
+        //     if (window.LandingSDK) {
+        //         var _s = window._lastClickSnapshot;
+        //         LandingSDK.track.landingPageClick({
+        //             landing_page_id: "skin1",
+        //             tab_key: "download",
+        //             tab_name: "下载按钮",
+        //             click_coordinates_x: (function(s){ var v = s && s.x != null ? Number(s.x) : NaN; return isFinite(v) ? parseInt(v, 10) : 0; })(_s),
+        //             click_coordinates_y: (function(s){ var v = s && s.y != null ? Number(s.y) : NaN; return isFinite(v) ? parseInt(v, 10) : 0; })(_s),
+        //             click_x_percent: (function(s){ var x = s && s.x != null ? Number(s.x) : NaN, w = window.innerWidth || 0; return isFinite(x) && w > 0 ? Math.max(0, Math.min(100, parseInt(x / w * 100, 10))) : 0; })(_s),
+        //             click_y_percent: (function(s){ var y = s && s.y != null ? Number(s.y) : NaN, h = window.innerHeight || 0; return isFinite(y) && h > 0 ? Math.max(0, Math.min(100, parseInt(y / h * 100, 10))) : 0; })(_s),
+        //             screen_width: parseInt(window.screen && window.screen.width, 10) || 0,
+        //             screen_height: parseInt(window.screen && window.screen.height, 10) || 0,
+        //             trace_id: "aba95c30-3809-43b1-a5af-85179e6f8446"
+        //         });
+        //     }
+        //     } catch(e) {}
+        // }
+        // window.location.href = link;
+    }
+
+    function copyToClip(){
+        var aux = document.createElement("input");
+        var clipboard_value = "channel://ox881tx";
+        aux.setAttribute("value", clipboard_value);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
+        document.body.removeChild(aux);
+    }
+
+    function openDoc() {
+        document.getElementById('install-doc').style.display='block';
+    }
+
+    function closeDoc() {
+        document.getElementById('install-doc').style.display='none';
+    }
+
+</script>
+
+
+</body>
+
+</html>
